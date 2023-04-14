@@ -18,7 +18,8 @@ class Course {
     }
 
     set name(newName) {
-        if (newName) {
+        let hasCourseWord = newName.toLowerCase().includes("curso")
+        if (newName && hasCourseWord) {
             this._name = newName;
         } else {
             console.error("El nombre no es valido");
