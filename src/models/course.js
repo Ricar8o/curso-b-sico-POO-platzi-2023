@@ -12,6 +12,18 @@ class Course {
         this.lessons = lessons;
         this.points = points;
     }
+
+    get name() {
+        return this._name;
+    }
+
+    set name(newName) {
+        if (newName) {
+            this._name = newName;
+        } else {
+            console.error("El nombre no es valido");
+        }
+    }
 }
 
 module.exports = Course;
