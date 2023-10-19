@@ -35,4 +35,11 @@ class Student {
 
 }
 
-module.exports = Student;
+class ExpertStudent extends Student {
+    constructor(props) {
+        super(props)
+    }
+}
+
+
+module.exports = Student, ExpertStudent;
